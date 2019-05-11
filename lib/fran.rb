@@ -1,6 +1,8 @@
-class Fran
+require 'money'
+
+class Fran < Money
   def initialize(amount)
-    @amount = amount
+    super(amount)
   end
 
   def times(multiplier)
