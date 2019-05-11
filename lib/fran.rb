@@ -12,8 +12,4 @@ class Fran < Money
   def ==(other)
     @amount == other.instance_variable_get(:@amount)
   end
-
-  def eql?(other)
-    other.instance_of?(Fran) && @amount == other.instance_variable_get(:@amount)
-  end
 end
