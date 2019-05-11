@@ -14,6 +14,6 @@ class Doller
   end
 
   def eql?(other)
-    other.is_a?(Doller) && @amount == other.amount
+    other.instance_of?(Doller) && @amount == other.amount
   end
 end
