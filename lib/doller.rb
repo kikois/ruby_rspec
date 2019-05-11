@@ -9,6 +9,10 @@ class Doller
     Doller.new(@amount * multiplier)
   end
 
+  def ==(other)
+    @amount == other.amount
+  end
+
   def eql?(other)
     other.is_a?(Doller) && @amount == other.amount
   end
