@@ -3,11 +3,9 @@ describe Doller do
 
     it do
       five = Doller.new(5)
-      product = five.times(2)
-      expect(Doller.new(10)).to eq product
+      expect(Doller.new(10)).to eq five.times(2)
 
-      product = five.times(3)
-      expect(Doller.new(15)).to eq product
+      expect(Doller.new(15)).to eq five.times(3)
     end
   end
 
