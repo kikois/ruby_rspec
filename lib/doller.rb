@@ -1,6 +1,4 @@
 class Doller
-  attr_reader :amount
-
   def initialize(amount)
     @amount = amount
   end
@@ -10,10 +8,10 @@ class Doller
   end
 
   def ==(other)
-    @amount == other.amount
+    @amount == other.instance_variable_get(:@amount)
   end
 
   def eql?(other)
-    other.instance_of?(Doller) && @amount == other.amount
+    other.instance_of?(Doller) && @amount == other.instance_variable_get(:@amount)
   end
 end
