@@ -1,13 +1,4 @@
 describe Fran do
-  describe '#multiplication' do
-
-    it do
-      five = Fran.new(5)
-      expect(Fran.new(10)).to eq five.times(2)
-      expect(Fran.new(15)).to eq five.times(3)
-    end
-  end
-
   describe '#eql?' do
     it do
       object1 = Fran.new(5)

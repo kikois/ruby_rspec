@@ -22,4 +22,13 @@ describe Money do
       expect(object1.eql?(object2)).to be false
     end
   end
+
+  describe '#multiplication' do
+
+    it do
+      five = Fran.new(5)
+      expect(Fran.new(10)).to eq five.times(2)
+      expect(Fran.new(15)).to eq five.times(3)
+    end
+  end
 end
