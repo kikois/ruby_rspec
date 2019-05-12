@@ -1,10 +1,8 @@
 describe Money do
   describe '#multiplication' do
-
     it do
       five = Doller.new(5)
       expect(Doller.new(10)).to eq five.times(2)
-
       expect(Doller.new(15)).to eq five.times(3)
     end
   end
@@ -36,7 +34,6 @@ describe Money do
   end
 
   describe '#multiplication' do
-
     it do
       five = Fran.new(5)
       expect(Fran.new(10)).to eq five.times(2)
