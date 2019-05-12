@@ -1,2 +1,0 @@
-describe Doller do
-end
